@@ -1,0 +1,22 @@
+[features]
+seeds = true
+skip-lint = false
+
+[programs.localnet]
+cypher_v3_reimbursement = "c3eRRbjqWr3CKNpnYGJsy3MK98hbsJyhRziy46EvQkN"
+
+[programs.devnet]
+cypher_v3_reimbursement = "c3eRRbjqWr3CKNpnYGJsy3MK98hbsJyhRziy46EvQkN"
+
+[programs.mainnet]
+cypher_v3_reimbursement = "c3eRRbjqWr3CKNpnYGJsy3MK98hbsJyhRziy46EvQkN"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "mainnet"
+wallet = "/Users/mc/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
